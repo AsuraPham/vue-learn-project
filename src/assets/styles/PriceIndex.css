@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.4;
+  }
+#price {
+    margin-top: 20px;
+    width: 300px;
+    padding: 0 40px 40px;
+    background: #2F242C;
+    border-radius: 5px;
+    color: #B3BFB8;
+  }
+  
+  h1 {
+    color: #F0F7F4;
+  }
+  
+  .lighten {
+    color: white;
+  }
