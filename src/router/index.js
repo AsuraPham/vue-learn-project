@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import PriceIndex from '@/components/PriceIndex'
 import ProductList from '@/components/ProductList'
+import Profile from '@/app/profile/Profile'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/product',
       name: 'ProductList',
       component: ProductList
+    },
+    {
+      path: '/@:username',
+      component: Profile,
+      name: Profile
     }
   ]
 })

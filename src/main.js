@@ -6,10 +6,12 @@ import router from './router'
 import axios from 'axios'
 import store from './store'
 import { currency } from './common/currency'
+import VueAxios from 'vue-axios'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 Vue.filter('currency', currency)
+Vue.use(VueAxios, axios)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
