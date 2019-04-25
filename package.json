@@ -11,13 +11,17 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
   "dependencies": {
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.0",
-    "vue-axios": "^2.1.4"
+    "vue-axios": "^2.1.4",
+    "bootstrap": "^4.1.3",
+    "node-sass-chokidar": "^1.3.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

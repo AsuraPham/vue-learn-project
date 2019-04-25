@@ -7,6 +7,7 @@ import axios from 'axios'
 import store from './store'
 import { currency } from './common/currency'
 import VueAxios from 'vue-axios'
+import 'bootstrap/dist/css/bootstrap.css'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios

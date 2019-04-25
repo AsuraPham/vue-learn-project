@@ -12,7 +12,6 @@ const getters = {
     return state.profile
   }
 }
-debugger
 const actions = {
   [FETCH_PROFILE] (context, payload) {
     const { username } = payload

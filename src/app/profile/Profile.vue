@@ -52,7 +52,6 @@ import {
   FETCH_PROFILE
 } from '@/app/profile/ProfileActions.type'
 
-debugger
 export default {
   name: 'RwvProfile',
   mounted () {
